@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Janavi P | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
+
+    <!-- STAR CANVAS -->
+    <canvas id="stars"></canvas>
 
     <!-- NAVBAR -->
     <nav>
@@ -23,19 +25,18 @@
     </nav>
 
     <!-- HOME -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span>Janavi P</span></h1>
-            <p>and i like to code!</p>
+    <section class="hero" id="home">
+    <canvas id="stars"></canvas>
 
-            <br>
+    <div class="hero-content">
+        <h1>Hi, I'm <span>Janavi P</span></h1>
+        <p>and i like to code!</p>
+        <br>
+        <p>2nd year B.Tech CSE AI & ML student</p>
+        <p>@SRM KTR</p>
+    </div>
+</section>
 
-            <p class="subtitle">
-                2nd year B.Tech CSE AI & ML student<br>
-                @SRM KTR
-            </p>
-        </div>
-    </section>
 
     <!-- ABOUT -->
     <section id="about" class="section">
@@ -43,7 +44,8 @@
         <div class="card">
             <p>
                 I enjoy turning ideas into code and building meaningful projects.
-                I’m passionate about technology, problem solving, and continuously learning new tools in the field of Computer Science.
+                I am currently pursuing B.Tech Computer Science Engineering with
+                specialization in Artificial Intelligence and Machine Learning at SRMIST KTR.
             </p>
         </div>
     </section>
@@ -52,14 +54,17 @@
     <section id="skills" class="section">
         <h2>Skills</h2>
         <div class="grid">
-            <div class="box">Java</div>
             <div class="box">Python</div>
+            <div class="box">Java</div>
+            <div class="box">C</div>
+            <div class="box">C++</div>
             <div class="box">HTML</div>
             <div class="box">CSS</div>
             <div class="box">JavaScript</div>
-            <div class="box">Machine Learning Basics</div>
             <div class="box">Generative AI Tools</div>
             <div class="box">Communication Skills</div>
+            <div class="box">Teamwork & Collaboration</div>
+            <div class="box">Problem Solving</div>
         </div>
     </section>
 
@@ -68,15 +73,15 @@
         <h2>Projects</h2>
 
         <div class="card">
-            <h3>Student Management System</h3>
-            <p>Java-based application for managing student data.</p>
-            <a href="https://github.com/janavipvel" target="_blank">View on GitHub</a>
+            <h3>GroceryGame</h3>
+            <p>A mini grocery-themed game built using HTML, CSS, and JavaScript.</p>
+            <a href="https://github.com/janavipvel/GroceryGame" target="_blank">View on GitHub</a>
         </div>
 
         <div class="card">
-            <h3>Portfolio Website</h3>
-            <p>Personal responsive portfolio built using HTML, CSS, and JavaScript.</p>
-            <a href="https://github.com/janavipvel" target="_blank">View on GitHub</a>
+            <h3>WishCardGenerator</h3>
+            <p>A Java-based desktop application that generates personalized greeting cards.</p>
+            <a href="https://github.com/janavipvel/WishCardGenerator" target="_blank">View on GitHub</a>
         </div>
     </section>
 
@@ -85,14 +90,22 @@
         <h2>Education</h2>
 
         <div class="card">
-            <h3>B.Tech – Computer Science Engineering (AI & ML)</h3>
+            <h3>B.Tech Computer Science Engineering (AI & ML)</h3>
             <p>SRM Institute of Science and Technology, Kattankulathur</p>
-            <p>Currently pursuing</p>
+            <p>Expected Graduation: 2028</p>
+            <p>CGPA: Sem 1 – <strong>8.36</strong> | Sem 2 – <strong>9.476</strong></p>
         </div>
 
         <div class="card">
-            <h3>Schooling</h3>
+            <h3>Class 12</h3>
             <p>Velammal Vidyalaya, Mel Ayanambakkam, Chennai</p>
+            <p>Score: <strong>82.6%</strong></p>
+        </div>
+
+        <div class="card">
+            <h3>Class 10</h3>
+            <p>Velammal Vidyalaya, Mel Ayanambakkam, Chennai</p>
+            <p>Score: <strong>87.2%</strong></p>
         </div>
     </section>
 
@@ -110,10 +123,10 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
         <p>© 2026 Janavi P</p>
     </footer>
 
+    <script src="./script.js"></script>
 </body>
 </html>
