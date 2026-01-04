@@ -11,7 +11,7 @@ body {
     overflow-x: hidden;
 }
 
-/* STAR CANVAS */
+/* STAR BACKGROUND */
 #stars {
     position: fixed;
     inset: 0;
@@ -31,7 +31,7 @@ nav {
     z-index: 1000;
 }
 
-nav .logo {
+.logo {
     color: #00f6ff;
 }
 
@@ -47,7 +47,6 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    transition: 0.3s;
 }
 
 nav ul li a:hover {
@@ -61,57 +60,38 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 80px;
     position: relative;
     z-index: 1;
-}
-
-.hero-content {
-    max-width: 600px;
-}
-
-.hero h1 {
-    font-size: 3rem;
 }
 
 .hero span {
     color: #00f6ff;
 }
 
-.hero p {
-    margin-top: 10px;
-    font-size: 1.2rem;
-}
-
 .subtitle {
-    margin-top: 15px;
+    margin-top: 20px;
     opacity: 0.85;
 }
 
-/* ASTRONAUT */
+/* ASTRONAUT (FIXED & GUARANTEED VISIBLE) */
 .astronaut {
     width: 180px;
-    height: 180px;
-    background: url("https://raw.githubusercontent.com/matteobruni/tsparticles/main/demo/images/astronaut.png") no-repeat center;
-    background-size: contain;
-    animation: astronautFloat 6s ease-in-out infinite;
-    filter: drop-shadow(0 0 12px rgba(0, 246, 255, 0.4));
-    position: relative;
-    z-index: 2;
+    max-width: 40vw;
+    animation: float 6s ease-in-out infinite;
+    filter: drop-shadow(0 0 15px rgba(0, 246, 255, 0.5));
 }
 
-@keyframes astronautFloat {
+@keyframes float {
     0% { transform: translateY(0); }
-    50% { transform: translateY(-18px); }
+    50% { transform: translateY(-25px); }
     100% { transform: translateY(0); }
 }
+
 
 /* SECTIONS */
 .section {
     padding: 100px 80px;
-    position: relative;
-    z-index: 1;
 }
 
 .section h2 {
@@ -122,11 +102,10 @@ nav ul li a:hover {
 
 /* CARDS */
 .card {
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(255,255,255,0.06);
     padding: 25px;
     border-radius: 14px;
-    border: 1px solid rgba(0, 246, 255, 0.25);
-    margin-bottom: 25px;
+    border: 1px solid rgba(0,246,255,0.25);
 }
 
 /* GRID */
@@ -137,29 +116,15 @@ nav ul li a:hover {
 }
 
 .box {
-    background: rgba(255, 255, 255, 0.06);
     padding: 15px;
-    border-radius: 12px;
     text-align: center;
-    border: 1px solid rgba(0, 246, 255, 0.3);
-    transition: 0.3s;
-}
-
-.box:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 0 18px rgba(0, 246, 255, 0.6);
-}
-
-/* LINKS */
-a {
-    color: #00f6ff;
-    text-decoration: none;
+    border: 1px solid rgba(0,246,255,0.3);
+    border-radius: 12px;
 }
 
 /* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
-    background: rgba(2, 8, 20, 0.9);
-    opacity: 0.8;
+    background: rgba(2,8,20,0.9);
 }
